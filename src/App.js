@@ -16,15 +16,29 @@ const Dropdown = ({ options, onChange, value }) => {
 const App = () => {
   const [selectedValue, setSelectedValue] = useState(null);
   const [foundStruct, setFoundStruct] = useState(null);
+  const [foundStruct2, setFoundStruct2] = useState(null);
 
-  const handleChange = (event) => {
-    const selectedOption = data.struct[event.target.value];
-    setSelectedValue(event.target.value);
+  const handleChange = (level, event) => {
+    const selectedOption = (level === 1)
+      ? data.struct[event.target.value]
+      : foundStruct[event.target.value];
+
+    if (level === 1) {
+      setSelectedValue(event.target.value);
+    }
 
     if (selectedOption.struct) {
-      setFoundStruct(selectedOption.struct);
+      if (level === 1) {
+        setFoundStruct(selectedOption.struct);
+      } else {
+        setFoundStruct2(selectedOption.struct);
+      }
     } else {
-      setFoundStruct(null);
+      if (level === 1) {
+        setFoundStruct(null);
+      } else {
+        setFoundStruct2(null);
+      }
     }
   };
 
@@ -33,11 +47,17 @@ const App = () => {
       <Dropdown
         options={data.struct}
         value={selectedValue}
-        onChange={handleChange}
+        onChange={(event) => handleChange(1, event)}
       />
       {foundStruct && (
         <Dropdown
           options={foundStruct}
+          onChange={(event) => handleChange(2, event)}
+        />
+      )}
+      {foundStruct2 && (
+        <Dropdown
+          options={foundStruct2}
           onChange={() => {}}
         />
       )}
