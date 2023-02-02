@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <h1 className='mb-1 text-center'>Recursive Dropdown</h1>
+    <p className='mb-5 text-center'>Please refresh after if something unexpected happens </p>
     <App />
   </React.StrictMode>
 );

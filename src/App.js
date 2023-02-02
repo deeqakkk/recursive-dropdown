@@ -1,31 +1,30 @@
 import React, { useState } from 'react';
 import data from './data.json';
+import { Row, Col, Form, FormControl, Button } from 'react-bootstrap';
 
 const Dropdown = ({ options, onChange, value }) => (
-  <select value={value || ''} onChange={onChange}>
+  <FormControl className='mb-4' as="select" value={value || 'Select Items'} onChange={onChange}>
     {options.map((option, i) => (
       <option key={i} value={i}>
         {option.name}
       </option>
     ))}
-  </select>
+  </FormControl>
 );
-const SelectedValues = ({ values }) => (
 
-  <div style={{ float: 'right' }}>
+const SelectedValues = ({ values }) => (
+  <Col xs={6}>
     <h3>Selected values:</h3>
     <ul>
       {values.map((value, index) => (
-        console.log(value),
         <li key={index}>{value}</li>
       ))}
     </ul>
-  </div>
+  </Col>
 );
 
 const App = () => {
   const [selectedValues, setSelectedValues] = useState([]);
-
   const handleChange = (index, event) => {
     setSelectedValues((prevSelectedValues) => {
       const newSelectedValues = [...prevSelectedValues];
@@ -39,30 +38,35 @@ const App = () => {
   }, data.struct);
 
   return (
-    <div  style={{width:'50%'}}>
-    {selectedValues.map((selectedValue, index) => (
-      <div key={index}>
-        <Dropdown
-          options={
-            selectedValues
-              .slice(0, index)
-              .reduce((currentOption, selectedValue) => currentOption[selectedValue].struct, data.struct)
-          }
-          value={selectedValue}
-          onChange={(event) => handleChange(index, event)}
-        />
-      </div>
-    ))}
-    {currentOption && currentOption.length > 0 ? (
-      <div>
-        <Dropdown
-          options={currentOption}
-          onChange={(event) => handleChange(selectedValues.length, event)}
-        />
-      </div>
-    ) : null}
-    <SelectedValues values={selectedValues} />
-  </div>
-);};
+    <Row>
+      <Col xs={6}>
+        <Form>
+          {selectedValues.map((selectedValue, index) => (
+            <Form.Group key={index}>
+              <Dropdown
+                options={
+                  selectedValues
+                    .slice(0, index)
+                    .reduce((currentOption, selectedValue) => currentOption[selectedValue].struct, data.struct)
+                }
+                value={selectedValue}
+                onChange={(event) => handleChange(index, event)}
+              />
+            </Form.Group>
+          ))}
+          {currentOption && currentOption.length > 0 ? (
+            <Form.Group>
+              <Dropdown
+                options={currentOption}
+                onChange={(event) => handleChange(selectedValues.length, event)}
+              />
+            </Form.Group>
+          ) : null}
+        </Form>
+      </Col>
+      <SelectedValues values={selectedValues} />
+    </Row>
+  );
+};
 
 export default App;
