@@ -15,9 +15,17 @@ const Dropdown = ({ options, onChange, value }) => {
 
 const App = () => {
   const [selectedValue, setSelectedValue] = useState(null);
+  const [foundStruct, setFoundStruct] = useState(null);
 
   const handleChange = (event) => {
+    const selectedOption = data.struct[event.target.value];
     setSelectedValue(event.target.value);
+
+    if (selectedOption.struct) {
+      setFoundStruct(selectedOption.struct);
+    } else {
+      setFoundStruct(null);
+    }
   };
 
   return (
@@ -27,6 +35,12 @@ const App = () => {
         value={selectedValue}
         onChange={handleChange}
       />
+      {foundStruct && (
+        <Dropdown
+          options={foundStruct}
+          onChange={() => {}}
+        />
+      )}
     </div>
   );
 };
