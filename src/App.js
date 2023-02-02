@@ -10,6 +10,18 @@ const Dropdown = ({ options, onChange, value }) => (
     ))}
   </select>
 );
+const SelectedValues = ({ values }) => (
+
+  <div style={{ float: 'right' }}>
+    <h3>Selected values:</h3>
+    <ul>
+      {values.map((value, index) => (
+        console.log(value),
+        <li key={index}>{value}</li>
+      ))}
+    </ul>
+  </div>
+);
 
 const App = () => {
   const [selectedValues, setSelectedValues] = useState([]);
@@ -27,32 +39,30 @@ const App = () => {
   }, data.struct);
 
   return (
-    <div>
-      {selectedValues.map((selectedValue, index) => (
-        <div key={index}>
-          <Dropdown
-            options={
-              selectedValues
-                .slice(0, index)
-                .reduce((currentOption, selectedValue) => currentOption[selectedValue].struct, data.struct)
-            }
-            value={selectedValue}
-            onChange={(event) => handleChange(index, event)}
-          />
-        </div>
-      ))}
-      {currentOption.length > 0 ? (
-        <div>
-          <Dropdown
-            options={currentOption}
-            onChange={(event) => handleChange(selectedValues.length, event)}
-          />
-        </div>
-      ) : (
-        alert("No further dropdowns")
-      )}
-    </div>
-  );
-};
+    <div  style={{width:'50%'}}>
+    {selectedValues.map((selectedValue, index) => (
+      <div key={index}>
+        <Dropdown
+          options={
+            selectedValues
+              .slice(0, index)
+              .reduce((currentOption, selectedValue) => currentOption[selectedValue].struct, data.struct)
+          }
+          value={selectedValue}
+          onChange={(event) => handleChange(index, event)}
+        />
+      </div>
+    ))}
+    {currentOption && currentOption.length > 0 ? (
+      <div>
+        <Dropdown
+          options={currentOption}
+          onChange={(event) => handleChange(selectedValues.length, event)}
+        />
+      </div>
+    ) : null}
+    <SelectedValues values={selectedValues} />
+  </div>
+);};
 
 export default App;
