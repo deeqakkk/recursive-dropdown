@@ -1,0 +1,1466 @@
+{
+    "struct": [{
+            "id": "List_1",
+            "name": "List_1",
+            "type": "LIST",
+            "label": "List Screen Type",
+            "struct": [{
+                    "id": "listName",
+                    "name": "List Name",
+                    "dataType": "TEXT",
+                    "isReadOnly": false,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "description",
+                    "name": "List Description",
+                    "dataType": "TEXT",
+                    "isReadOnly": false,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "items",
+                    "name": "List Items (screen)",
+                    "dataType": "LIST",
+                    "isReadOnly": false,
+                    "struct": []
+                },
+                {
+                    "id": "elements",
+                    "name": "List Elements (data)",
+                    "dataType": "LIST",
+                    "isReadOnly": false,
+                    "struct": []
+                },
+                {
+                    "id": "isVisible",
+                    "name": "isVisible",
+                    "dataType": "BOOLEAN",
+                    "isReadOnly": false,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "add",
+                    "name": "ADD Screen",
+                    "label": "List Components",
+                    "struct": [{
+                        "id": "FileUpload_1",
+                        "name": "FileUpload_1",
+                        "type": "FILE_UPLOAD",
+                        "label": "Component MetaData",
+                        "struct": [{
+                                "id": "nodeId",
+                                "name": "nodeId",
+                                "dataType": "TEXT",
+                                "isReadOnly": true,
+                                "label": "Select Operator",
+                                "operators": [{
+                                        "id": "equals",
+                                        "name": "Equals"
+                                    },
+                                    {
+                                        "id": "notEquals",
+                                        "name": "Not Equals"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "label",
+                                "name": "label",
+                                "dataType": "OBJECT",
+                                "isReadOnly": false,
+                                "label": "Label Sub Attributes",
+                                "struct": [{
+                                        "id": "fontSize",
+                                        "name": "fontSize",
+                                        "dataType": "NUMBER",
+                                        "isReadOnly": false,
+                                        "label": "Select Operator",
+                                        "operators": [{
+                                                "id": "equals",
+                                                "name": "Equals"
+                                            },
+                                            {
+                                                "id": "notEquals",
+                                                "name": "Not Equals"
+                                            },
+                                            {
+                                                "id": "lessThan",
+                                                "name": "Less With"
+                                            },
+                                            {
+                                                "id": "greaterThan",
+                                                "name": "Greater With"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "isVisible",
+                                        "name": "isVisible",
+                                        "dataType": "BOOLEAN",
+                                        "isReadOnly": false,
+                                        "label": "Select Operator",
+                                        "operators": [{
+                                                "id": "equals",
+                                                "name": "Equals"
+                                            },
+                                            {
+                                                "id": "notEquals",
+                                                "name": "Not Equals"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "color",
+                                        "name": "color",
+                                        "dataType": "NUMBER",
+                                        "isReadOnly": false,
+                                        "label": "Select Operator",
+                                        "operators": [{
+                                                "id": "equals",
+                                                "name": "Equals"
+                                            },
+                                            {
+                                                "id": "notEquals",
+                                                "name": "Not Equals"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "value",
+                                        "name": "value",
+                                        "dataType": "TEXT",
+                                        "isReadOnly": false,
+                                        "label": "Select Operator",
+                                        "operators": [{
+                                                "id": "equals",
+                                                "name": "Equals"
+                                            },
+                                            {
+                                                "id": "notEquals",
+                                                "name": "Not Equals"
+                                            },
+                                            {
+                                                "id": "contains",
+                                                "name": "Contains"
+                                            },
+                                            {
+                                                "id": "startsWith",
+                                                "name": "Starts With"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "subText",
+                                "name": "subText",
+                                "dataType": "OBJECT",
+                                "isReadOnly": false,
+                                "label": "Label Sub Attributes",
+                                "struct": [{
+                                        "id": "fontSize",
+                                        "name": "fontSize",
+                                        "dataType": "NUMBER",
+                                        "isReadOnly": false,
+                                        "label": "Select Operator",
+                                        "operators": [{
+                                                "id": "equals",
+                                                "name": "Equals"
+                                            },
+                                            {
+                                                "id": "notEquals",
+                                                "name": "Not Equals"
+                                            },
+                                            {
+                                                "id": "lessThan",
+                                                "name": "Less With"
+                                            },
+                                            {
+                                                "id": "greaterThan",
+                                                "name": "Greater With"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "isVisible",
+                                        "name": "isVisible",
+                                        "dataType": "BOOLEAN",
+                                        "isReadOnly": false,
+                                        "label": "Select Operator",
+                                        "operators": [{
+                                                "id": "equals",
+                                                "name": "Equals"
+                                            },
+                                            {
+                                                "id": "notEquals",
+                                                "name": "Not Equals"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "color",
+                                        "name": "color",
+                                        "dataType": "NUMBER",
+                                        "isReadOnly": false,
+                                        "label": "Select Operator",
+                                        "operators": [{
+                                                "id": "equals",
+                                                "name": "Equals"
+                                            },
+                                            {
+                                                "id": "notEquals",
+                                                "name": "Not Equals"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "value",
+                                        "name": "value",
+                                        "dataType": "TEXT",
+                                        "isReadOnly": false,
+                                        "label": "Select Operator",
+                                        "operators": [{
+                                                "id": "equals",
+                                                "name": "Equals"
+                                            },
+                                            {
+                                                "id": "notEquals",
+                                                "name": "Not Equals"
+                                            },
+                                            {
+                                                "id": "contains",
+                                                "name": "Contains"
+                                            },
+                                            {
+                                                "id": "startsWith",
+                                                "name": "Starts With"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "value",
+                                "name": "value",
+                                "dataType": "OBJECT",
+                                "isReadOnly": false,
+                                "label": "Label Sub Attributes",
+                                "struct": [{
+                                        "id": "fontSize",
+                                        "name": "fontSize",
+                                        "dataType": "NUMBER",
+                                        "isReadOnly": false,
+                                        "label": "Select Operator",
+                                        "operators": [{
+                                                "id": "equals",
+                                                "name": "Equals"
+                                            },
+                                            {
+                                                "id": "notEquals",
+                                                "name": "Not Equals"
+                                            },
+                                            {
+                                                "id": "lessThan",
+                                                "name": "Less With"
+                                            },
+                                            {
+                                                "id": "greaterThan",
+                                                "name": "Greater With"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "isVisible",
+                                        "name": "isVisible",
+                                        "dataType": "BOOLEAN",
+                                        "isReadOnly": false,
+                                        "label": "Select Operator",
+                                        "operators": [{
+                                                "id": "equals",
+                                                "name": "Equals"
+                                            },
+                                            {
+                                                "id": "notEquals",
+                                                "name": "Not Equals"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "color",
+                                        "name": "color",
+                                        "dataType": "NUMBER",
+                                        "isReadOnly": false,
+                                        "label": "Select Operator",
+                                        "operators": [{
+                                                "id": "equals",
+                                                "name": "Equals"
+                                            },
+                                            {
+                                                "id": "notEquals",
+                                                "name": "Not Equals"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "value",
+                                        "name": "value",
+                                        "dataType": "TEXT",
+                                        "isReadOnly": false,
+                                        "label": "Select Operator",
+                                        "operators": [{
+                                                "id": "equals",
+                                                "name": "Equals"
+                                            },
+                                            {
+                                                "id": "notEquals",
+                                                "name": "Not Equals"
+                                            },
+                                            {
+                                                "id": "contains",
+                                                "name": "Contains"
+                                            },
+                                            {
+                                                "id": "startsWith",
+                                                "name": "Starts With"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "isVisible",
+                                "name": "isVisible",
+                                "dataType": "BOOLEAN",
+                                "isReadOnly": false,
+                                "label": "Select Operator",
+                                "operators": [{
+                                        "id": "equals",
+                                        "name": "Equals"
+                                    },
+                                    {
+                                        "id": "notEquals",
+                                        "name": "Not Equals"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "minImage",
+                                "name": "Minimum Count of Files",
+                                "dataType": "NUMBER",
+                                "isReadOnly": false,
+                                "label": "Select Operator",
+                                "operators": [{
+                                        "id": "equals",
+                                        "name": "Equals"
+                                    },
+                                    {
+                                        "id": "notEquals",
+                                        "name": "Not Equals"
+                                    },
+                                    {
+                                        "id": "lessThan",
+                                        "name": "Less With"
+                                    },
+                                    {
+                                        "id": "greaterThan",
+                                        "name": "Greater With"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "maxImage",
+                                "name": "Maximum Count of Files",
+                                "dataType": "NUMBER",
+                                "isReadOnly": false,
+                                "label": "Select Operator",
+                                "operators": [{
+                                        "id": "equals",
+                                        "name": "Equals"
+                                    },
+                                    {
+                                        "id": "notEquals",
+                                        "name": "Not Equals"
+                                    },
+                                    {
+                                        "id": "lessThan",
+                                        "name": "Less With"
+                                    },
+                                    {
+                                        "id": "greaterThan",
+                                        "name": "Greater With"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "isReadOnly",
+                                "name": "isReadOnly",
+                                "dataType": "BOOLEAN",
+                                "isReadOnly": false,
+                                "label": "Select Operator",
+                                "operators": [{
+                                        "id": "equals",
+                                        "name": "Equals"
+                                    },
+                                    {
+                                        "id": "notEquals",
+                                        "name": "Not Equals"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "uploadedFiles",
+                                "name": "Files Uploaded",
+                                "dataType": "LIST_OF_TEXT",
+                                "operators": [{
+                                        "id": "equals",
+                                        "name": "Equals"
+                                    },
+                                    {
+                                        "id": "notEquals",
+                                        "name": "Not Equals"
+                                    }
+                                ]
+                            }
+                        ]
+                    }]
+                }
+            ]
+        },
+        {
+
+            "id": "Payment_1",
+            "name": "Payment_1",
+            "type": "PAYMENT",
+            "label": "Component MetaData",
+            "struct": [{
+                    "id": "nodeId",
+                    "name": "nodeId",
+                    "dataType": "TEXT",
+                    "isReadOnly": true,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "label",
+                    "name": "label",
+                    "dataType": "OBJECT",
+                    "isReadOnly": false,
+                    "label": "Label Sub Attributes",
+                    "struct": [{
+                            "id": "fontSize",
+                            "name": "fontSize",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "lessThan",
+                                    "name": "Less With"
+                                },
+                                {
+                                    "id": "greaterThan",
+                                    "name": "Greater With"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "isVisible",
+                            "name": "isVisible",
+                            "dataType": "BOOLEAN",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "color",
+                            "name": "color",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "value",
+                            "name": "value",
+                            "dataType": "TEXT",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "contains",
+                                    "name": "Contains"
+                                },
+                                {
+                                    "id": "startsWith",
+                                    "name": "Starts With"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "subText",
+                    "name": "subText",
+                    "dataType": "OBJECT",
+                    "isReadOnly": false,
+                    "label": "Label Sub Attributes",
+                    "struct": [{
+                            "id": "fontSize",
+                            "name": "fontSize",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "lessThan",
+                                    "name": "Less With"
+                                },
+                                {
+                                    "id": "greaterThan",
+                                    "name": "Greater With"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "isVisible",
+                            "name": "isVisible",
+                            "dataType": "BOOLEAN",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "color",
+                            "name": "color",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "value",
+                            "name": "value",
+                            "dataType": "TEXT",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "contains",
+                                    "name": "Contains"
+                                },
+                                {
+                                    "id": "startsWith",
+                                    "name": "Starts With"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "value",
+                    "name": "value",
+                    "dataType": "OBJECT",
+                    "isReadOnly": false,
+                    "label": "Label Sub Attributes",
+                    "struct": [{
+                            "id": "fontSize",
+                            "name": "fontSize",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "lessThan",
+                                    "name": "Less With"
+                                },
+                                {
+                                    "id": "greaterThan",
+                                    "name": "Greater With"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "isVisible",
+                            "name": "isVisible",
+                            "dataType": "BOOLEAN",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "color",
+                            "name": "color",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "value",
+                            "name": "value",
+                            "dataType": "TEXT",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "contains",
+                                    "name": "Contains"
+                                },
+                                {
+                                    "id": "startsWith",
+                                    "name": "Starts With"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "isVisible",
+                    "name": "isVisible",
+                    "dataType": "BOOLEAN",
+                    "isReadOnly": false,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "isReadOnly",
+                    "name": "isReadOnly",
+                    "dataType": "BOOLEAN",
+                    "isReadOnly": true,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "paymentMode",
+                    "name": "paymentMode",
+                    "dataType": "TEXT",
+                    "isReadOnly": false,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "paymentMode",
+                    "name": "paymentMode",
+                    "dataType": "TEXT",
+                    "isReadOnly": false,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "options",
+                    "name": "Options",
+                    "dataType": "OBJECT",
+                    "label": "Payment Options",
+                    "struct": [{
+                            "id": "upi",
+                            "name": "QR Code",
+                            "dataType": "TEXT",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "cash",
+                            "name": "Cash",
+                            "dataType": "TEXT",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        }
+                    ],
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "CHOICE-keY1x1",
+            "name": "CHOICE-keY1x1",
+            "type": "CHOICE",
+            "label": "Component MetaData",
+            "struct": [{
+                    "id": "nodeId",
+                    "name": "nodeId",
+                    "dataType": "TEXT",
+                    "isReadOnly": true,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "label",
+                    "name": "label",
+                    "dataType": "OBJECT",
+                    "isReadOnly": false,
+                    "label": "Label Sub Attributes",
+                    "struct": [{
+                            "id": "fontSize",
+                            "name": "fontSize",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "lessThan",
+                                    "name": "Less With"
+                                },
+                                {
+                                    "id": "greaterThan",
+                                    "name": "Greater With"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "isVisible",
+                            "name": "isVisible",
+                            "dataType": "BOOLEAN",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "color",
+                            "name": "color",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "value",
+                            "name": "value",
+                            "dataType": "TEXT",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "contains",
+                                    "name": "Contains"
+                                },
+                                {
+                                    "id": "startsWith",
+                                    "name": "Starts With"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "subText",
+                    "name": "subText",
+                    "dataType": "OBJECT",
+                    "isReadOnly": false,
+                    "label": "Label Sub Attributes",
+                    "struct": [{
+                            "id": "fontSize",
+                            "name": "fontSize",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "lessThan",
+                                    "name": "Less With"
+                                },
+                                {
+                                    "id": "greaterThan",
+                                    "name": "Greater With"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "isVisible",
+                            "name": "isVisible",
+                            "dataType": "BOOLEAN",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "color",
+                            "name": "color",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "value",
+                            "name": "value",
+                            "dataType": "TEXT",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "contains",
+                                    "name": "Contains"
+                                },
+                                {
+                                    "id": "startsWith",
+                                    "name": "Starts With"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "value",
+                    "name": "value",
+                    "dataType": "LIST_OF_TEXT",
+                    "isReadOnly": false,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        },
+                        {
+                            "id": "contains",
+                            "name": "Contains"
+                        }
+                    ]
+                },
+                {
+                    "id": "values",
+                    "name": "options",
+                    "dataType": "LIST",
+                    "isReadOnly": false,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "isVisible",
+                    "name": "isVisible",
+                    "dataType": "BOOLEAN",
+                    "isReadOnly": false,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "isReadOnly",
+                    "name": "isReadOnly",
+                    "dataType": "BOOLEAN",
+                    "isReadOnly": true,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "multiSelect",
+                    "name": "multiSelect",
+                    "dataType": "BOOLEAN",
+                    "isReadOnly": false,
+                    "label": "Select Operator",
+                    "operators": [{
+                        "id": "equals",
+                        "name": "Equals"
+                    }]
+                },
+                {
+                    "id": "isMandatory",
+                    "name": "isMandatory",
+                    "dataType": "BOOLEAN",
+                    "isReadOnly": false,
+                    "label": "Select Operator",
+                    "operators": [{
+                        "id": "equals",
+                        "name": "Equals"
+                    }]
+                }
+            ]
+        },
+        {
+            "id": "INFO-9t79ur",
+            "name": "INFO-9t79ur",
+            "type": "INFO",
+            "label": "Component MetaData",
+            "struct": [{
+                    "id": "nodeId",
+                    "name": "nodeId",
+                    "dataType": "TEXT",
+                    "isReadOnly": true,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "type",
+                    "name": "type",
+                    "dataType": "TEXT",
+                    "isReadOnly": true,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                },
+                {
+                    "id": "label",
+                    "name": "label",
+                    "dataType": "OBJECT",
+                    "isReadOnly": false,
+                    "label": "Label Sub Attributes",
+                    "struct": [{
+                            "id": "fontSize",
+                            "name": "fontSize",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "lessThan",
+                                    "name": "Less With"
+                                },
+                                {
+                                    "id": "greaterThan",
+                                    "name": "Greater With"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "isVisible",
+                            "name": "isVisible",
+                            "dataType": "BOOLEAN",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "color",
+                            "name": "color",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "value",
+                            "name": "value",
+                            "dataType": "TEXT",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "contains",
+                                    "name": "Contains"
+                                },
+                                {
+                                    "id": "startsWith",
+                                    "name": "Starts With"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "subText",
+                    "name": "subText",
+                    "dataType": "OBJECT",
+                    "isReadOnly": false,
+                    "label": "Label Sub Attributes",
+                    "struct": [{
+                            "id": "fontSize",
+                            "name": "fontSize",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "lessThan",
+                                    "name": "Less With"
+                                },
+                                {
+                                    "id": "greaterThan",
+                                    "name": "Greater With"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "isVisible",
+                            "name": "isVisible",
+                            "dataType": "BOOLEAN",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "color",
+                            "name": "color",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "value",
+                            "name": "value",
+                            "dataType": "TEXT",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "contains",
+                                    "name": "Contains"
+                                },
+                                {
+                                    "id": "startsWith",
+                                    "name": "Starts With"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "value",
+                    "name": "value",
+                    "dataType": "OBJECT",
+                    "isReadOnly": false,
+                    "label": "Label Sub Attributes",
+                    "struct": [{
+                            "id": "fontSize",
+                            "name": "fontSize",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "lessThan",
+                                    "name": "Less With"
+                                },
+                                {
+                                    "id": "greaterThan",
+                                    "name": "Greater With"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "isVisible",
+                            "name": "isVisible",
+                            "dataType": "BOOLEAN",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "color",
+                            "name": "color",
+                            "dataType": "NUMBER",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "value",
+                            "name": "value",
+                            "dataType": "TEXT",
+                            "isReadOnly": false,
+                            "label": "Select Operator",
+                            "operators": [{
+                                    "id": "equals",
+                                    "name": "Equals"
+                                },
+                                {
+                                    "id": "notEquals",
+                                    "name": "Not Equals"
+                                },
+                                {
+                                    "id": "contains",
+                                    "name": "Contains"
+                                },
+                                {
+                                    "id": "startsWith",
+                                    "name": "Starts With"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "isVisible",
+                    "name": "isVisible",
+                    "dataType": "BOOLEAN",
+                    "isReadOnly": false,
+                    "label": "Select Operator",
+                    "operators": [{
+                            "id": "equals",
+                            "name": "Equals"
+                        },
+                        {
+                            "id": "notEquals",
+                            "name": "Not Equals"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
